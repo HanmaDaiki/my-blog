@@ -1,0 +1,22 @@
+.previewpost {
+  display: flex;
+  flex-direction: column;
+}
+
+.previewpost__title {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.previewpost__date {
+  font-size: 14px;
+  font-weight: 200;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.previewpost__description {
+  font-size: 20px;
+  font-weight: 500;
+}
