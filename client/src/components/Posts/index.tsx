@@ -8,13 +8,11 @@ interface IProps {
 }
 
 const Posts: React.FC<IProps> = ({ posts }) => {
-  console.log(posts);
-  
   return(
     <div className={styles.posts}>
       {
         posts.map((post) => {
-          return <><PreviewPost title={post.mainTitle} date={post.publishedDate} description={post.description}/></>
+          return <><PreviewPost key={post._id} title={post.mainTitle} date={post.publishedDate} description={post.description} slug={post.slug}/></>
         })
       }
     </div>

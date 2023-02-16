@@ -6,3 +6,9 @@ body {
   font-weight: 400;
   color: #cdd9e5;
 }
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

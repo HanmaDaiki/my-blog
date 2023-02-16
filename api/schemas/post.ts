@@ -13,7 +13,13 @@ const post = {
       name: 'title',
       type: 'string',
       title: 'Title',
-      validation: (rule: any) => rule.required().max(30)
+      validation: (rule: any) => rule.required().max(50)
+    },
+    {
+      name: 'slugTitle',
+      type: 'string',
+      title: 'Slug Title',
+      validation: (rule: any) => rule.required().max(50)
     },
     {
       name: 'publishedDate',
@@ -22,25 +28,12 @@ const post = {
       validation: (rule: any) => rule.required()
     },
     {
-      name: 'image',
-      type: 'image',
-      title: 'Image',
-      validation: (rule: any) => rule.required(),
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alt'
-        }
-      ]
-    },
-    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
       validation: (rule: any) => rule.required(),
       options: {
-        source: 'title',
+        source: 'slugTitle',
         maxLength: 200,
         slugify: (input: any) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200)
       }
