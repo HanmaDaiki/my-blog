@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+.previewpost:not(:last-child) {
+  border-bottom: 1px solid #cdd9e5;
+  padding-bottom: 80px;
+}
+
+.previewpost:not(:first-child) {
+  padding-top: 80px;
+}
+
 .previewpost__title {
   font-size: 30px;
   font-weight: 200;
@@ -30,5 +39,5 @@
 }
 
 .previewpost__link:hover {
-  opacity: .7;
+  color: #88df8e;
 }

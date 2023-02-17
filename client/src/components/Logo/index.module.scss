@@ -1,13 +1,14 @@
 .logo {
-  background-image: url(../../../public/logo.svg);
-  background-size: cover;
+  background-image: url(../../../public/logo.png);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100px;
-  height: 100px;
+  height: 82px;
   cursor: pointer;
+  opacity: .8;
 }
 
 .logo:hover {
-  opacity: .7;
+  opacity: 1;
 }

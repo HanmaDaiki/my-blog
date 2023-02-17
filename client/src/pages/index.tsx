@@ -1,5 +1,5 @@
 import { Inter } from '@next/font/google';
-import { Header, Posts } from '@/components';
+import { Header, Posts, Footer } from '@/components';
 
 import { getPosts } from './api/posts'
 import { STEP_POSTS } from '@/utils/constants';
@@ -11,6 +11,7 @@ export default function Home(props: any) {
     <>
       <Header />
       <Posts posts={props.posts}/>
+      <Footer />
     </>
   )
 };
