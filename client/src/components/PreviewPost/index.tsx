@@ -7,7 +7,7 @@ interface IProps {
   title: string,
   date: string,
   description: string,
-  slug: ISlug
+  slug: ISlug,
 }
 
 const PreviewPost: React.FC<IProps> = ({ title, date, description, slug }) => {

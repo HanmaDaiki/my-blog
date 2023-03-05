@@ -12,7 +12,7 @@ const Posts: React.FC<IProps> = ({ posts }) => {
     <div className={styles.posts}>
       {
         posts.map((post) => {
-          return <><PreviewPost key={post._id} title={post.mainTitle} date={post.publishedDate} description={post.description} slug={post.slug}/></>
+          return <div key={post._id}><PreviewPost title={post.mainTitle} date={post.publishedDate} description={post.description} slug={post.slug}/></div>
         })
       }
     </div>

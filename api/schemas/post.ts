@@ -13,7 +13,7 @@ const post = {
       name: 'title',
       type: 'string',
       title: 'Title',
-      validation: (rule: any) => rule.required().max(50)
+      validation: (rule: any) => rule.required().max(100)
     },
     {
       name: 'slugTitle',
